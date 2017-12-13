@@ -61,20 +61,20 @@ $('#salecustomerinfo').submit(function (event) {
 
           var amountfield = '15.00';
           var customerid = Math.floor(Math.random() * (9999999999 - 1000 + 1)) + 1000;
-          var firstnamefield = 'test';
-          var lastnamefield = 'testlast';
-          var streetaddressfield = 'test 1234';
-          var extendedaddressfield = 'testtest';
-          var cityfield = 'testct';
-          var statecodefield = 'tn';
-          var zipcodefield = '12345';
-          var countrycodefield = 'us';
-          var companycodefield = 'testctry';
-          var phonefield = '3213213211';
-          var faxfield = '3213213211';
-          var emailfield = 'eee@lll.ccc';
-          var websitefield = 'www.www.www';
-          var cardholderfield = 'jjjjjjjj ssssdsdd';
+          var firstnamefield = $('#txtfirstname').val();
+          var lastnamefield = $('#txtlasttname').val();
+          var streetaddressfield = $('#txtstreetaddress').val();
+          var extendedaddressfield = $('#txtextendedaddress').val();
+          var cityfield = $('#txtcityname').val();
+          var statecodefield = $('#txtstatecidefield').val();
+          var zipcodefield = $('#txtzipcode').val();
+          var countrycodefield = $('#txtcountrycode').val();
+          var companycodefield = $('#txtcompanyname').val();
+          var phonefield = $('#txtphone').val();
+          var faxfield = $('#txtfax').val();
+          var emailfield = $('#txtemail').val();
+          var websitefield = $('#txtwebsite').val();
+          var cardholderfield = $('#txtcardholdername').val();
 
           var params = {
             method: 'sale',

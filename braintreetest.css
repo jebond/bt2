@@ -27,6 +27,37 @@ body > div > div {
   position: relative;
 }
 
+.unhosted-field {
+  height: 32px;
+  margin-bottom: 1em;
+  display: block;
+  background-color: transparent;
+  color: rgba(0, 0, 0, .87);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .26);
+  outline: 0;
+  width: 80%;
+  font-size: 16px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  position: relative;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-top: transparent !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+  border-right: transparent !important;
+  border-bottom: transparent !important;
+  position:absolute;
+  bottom: -15px;
+  left: -8px;
+}
+
 .btn-1 {
   background-color: #F27935;
 }

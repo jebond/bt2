@@ -11,7 +11,7 @@ echo ("<div style='display:none;' id='authenticationdiv'>". $clientToken ."</div
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="braintreetest.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="skeleton.css"
+<link rel="stylesheet" href="skeleton.css">
 <div class="type-1">
   <div class="w3-container">
     <div class="w3-panel w3-blue w3-card-4">
@@ -58,8 +58,137 @@ echo ("<div style='display:none;' id='authenticationdiv'>". $clientToken ."</div
     <div id="postal-code" class="hosted-field"></div>
     </center>
 </div>
+
 <div class = "row">
-<button>Submit</button>
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="firstname">First Name</label>
+    <center>
+    <div id="firstname" class="unhosted-field">
+      <input type="text" id="txtfirstname" placeholder="First Name">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="Last Name">Last Name</label>
+    <center>
+    <div id="lastname" class="unhosted-field">
+      <input type="text" id="txtlastname" placeholder="Last Name">
+    </div>
+    </center>
+</div>
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="streetaddress">Street Address</label>
+    <center>
+    <div id="streetaddress" class="unhosted-field">
+      <input type="text" id="txtstreetaddress" placeholder="Street Address">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="extendedstreetaddress">Extended Street Address</label>
+    <center>
+    <div id="extendedstreetaddress" class="unhosted-field">
+      <input type="text" id="txtextendedaddress" placeholder="Extended Street Address">
+    </div>
+    </center>
+</div>
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="cityname">City Name</label>
+    <center>
+    <div id="cityname" class="unhosted-field">
+      <input type="text" id="txtcityname" placeholder="City Name">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="statecodefield">State Abbreviation</label>
+    <center>
+    <div id="statecodefield" class="unhosted-field">
+      <input type="text" id="txtstatecidefield" placeholder="Enter State Code">
+    </div>
+    </center>
+</div>
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="zipcode">Zip Code</label>
+    <center>
+    <div id="zipcode" class="unhosted-field">
+      <input type="text" id="txtzipcode" placeholder="Zip Code">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="countrycode">Country code</label>
+    <center>
+    <div id="countrycode" class="unhosted-field">
+      <input type="text" id="txtcountrycode" placeholder="Enter Country Code">
+    </div>
+    </center>
+</div>
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="companycode">Company Name</label>
+    <center>
+    <div id="companycode" class="unhosted-field">
+      <input type="text" id="txtcompanyname" placeholder="Enter Company Name">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="phone">Phone</label>
+    <center>
+    <div id="phone" class="unhosted-field">
+      <input type="text" id="txtphone" placeholder="Enter phone number">
+    </div>
+    </center>
+</div>
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="fax">Fax</label>
+    <center>
+    <div id="fax" class="unhosted-field">
+      <input type="text" id="txtfax" placeholder="Enter fax number">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="email">Email</label>
+    <center>
+    <div id="phone" class="unhosted-field">
+      <input type="text" id="txtemail" placeholder="Enter email address">
+    </div>
+    </center>
+</div>
+
+
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="website">Website</label>
+    <center>
+    <div id="website" class="unhosted-field">
+      <input type="text" id="txtwebsite" placeholder="Enter website">
+    </div>
+    </center>
+  </div>
+  <div class = "six columns">
+    <label for="cardholdername">Card Holder Name</label>
+    <center>
+    <div id="cardholdername" class="unhosted-field">
+      <input type="text" id="txtcardholdername" placeholder="Enter Card Holder Name">
+    </div>
+    </center>
+</div>
+
+
+<div class = "row">
+<button class="btn-1">Submit</button>
 </div>
 </form>
 </div>
