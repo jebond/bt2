@@ -1,8 +1,9 @@
 $(document).ready(function() {
 $('#customerinfo').submit(function (event) {
-  alert("im called");
+  event.preventDefault();
+
   var customerid = $('#customerid1 option:selected').val();
-  
+
   var params = {
     method: 'getuserinfo',
     customerID: customerid
@@ -17,10 +18,10 @@ $('#customerinfo').submit(function (event) {
     $("#custresponse").html(result.responseText);
     $("#custresponse").css("display","block");  
     $("#custresponse").css("border-radius","10px");
-    $("#custresponse").css("align","center");
+    $("#custresponse").css("align","left");
     $("#custresponse").css("width","100%");
     $("#custresponse").css("color","blue");
     }
 });
 });
-}
+})

@@ -34,7 +34,7 @@ DoBasicSale(
 	fwrite($handle, $data."\r\n");
 	fclose($handle);
 }
-else if($dataarray->method === 'userlookup') {
+else if($dataarray->method === 'setuserinfo') {
 DoCustomerUpdate(
 	$dataarray->customerID,
 	$dataarray->firstname,
