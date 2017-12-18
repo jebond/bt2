@@ -21,22 +21,18 @@
 <div id="custresponse" style="display:none">test</div>
 <form id="customerinfo" method="POST" action="#">
 <select id = "customerid1">
-	<option value = "5973">5973</option>
-	<option value = "1856">1856</option>
-	<option value = "4271">4271</option>
-	<option value = "2107">2107</option>
-	<option value = "3455">3455</option>
-	<option value = "7210">7210</option>
-	<option value = "9578">9578</option>
-	<option value = "2059">2059</option>
-	<option value = "9669">9669</option>
-	<option value = "7632">7632</option>
-	<option value = "9812">9812</option>
-	<option value = "6006">6006</option>
-	<option value = "2714">2714</option>
-	<option value = "2479">2479</option>
-	<option value = "2626">2626</option>
-	<option value = "6789">6789</option>
+  <?php
+	$handle = fopen("id.txt","r");
+	if ($handle) {
+		while(($line = fgets($handle)) !== false) {
+			echo "<option value =" . $line . ">".$line."</option>";
+		}
+		fclose($handle);
+	}
+	else {
+
+	}
+  ?>
 </select>
 <button>Get Customer Info</button>
 </form>

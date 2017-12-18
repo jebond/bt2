@@ -44,7 +44,7 @@ body > div > div {
   position: relative;
 }
 
-input[type=text] {
+#salecustomerinfo input[type=text] {
   border: none;
   outline: none;
   background: transparent;
