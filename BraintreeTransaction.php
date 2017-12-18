@@ -143,9 +143,9 @@ function DoBasicSale($nonce,$amount,$customerid,$firstname,$lastname,$streetaddr
 			echo "Phone Code: ".$customer->phone."</br>";
 			echo "Fax Number: ".$customer->fax."</br>";
 			echo "Website: ".$customer->website."</br>";
-			echo "Card Number: ".$customer->creditCards->maskedNumber."</br>";
-			echo "Expiration Month: ".$customer->creditCards->expirationMonth."</br>";
-			echo "Expiration Month: ".$customer->creditCards->expirationYear."</br>";
+			echo "Card Number: ".$customer->paymentMethods[0]->maskedNumber."</br>";
+			echo "Expiration Month: ".$customer->paymentMethods[0]->expirationMonth."</br>";
+			echo "Expiration Year: ".$customer->paymentMethods[0]->expirationYear."</br>";
 	}
 }
 ?>
