@@ -186,6 +186,16 @@ echo ("<div style='display:none;' id='authenticationdiv'>". $clientToken ."</div
     </center>
 </div>
 
+<div class = "row">
+  <div class = "six columns" style="vertical-align: top;">
+    <label for="website">Amount</label>
+    <center>
+    <div id="website" class="unhosted-field">
+      <input type="text" id="txtamount" placeholder="15.00">
+    </div>
+    </center>
+  </div>
+</div>
 
 <div class = "row">
 <button class="btn-1">Submit</button>

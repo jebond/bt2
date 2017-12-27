@@ -98,7 +98,8 @@ function DoBasicSale($nonce,$amount,$customerid,$firstname,$lastname,$streetaddr
           }
           else
           {
-            echo("We Failed ");
+            echo("Transaction Failed ");
+            echo($result->transaction->processorResponseText);
             foreach($result->errors->deepAll() AS $error) {
     			echo($error->attribute . ": " . $error->code . " " . $error->message . "\n");
 		 }

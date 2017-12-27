@@ -55,11 +55,11 @@ $('#salecustomerinfo').submit(function (event) {
       hostedFieldsInstance.tokenize(function (err, payload) {
         
         if (err) {
-          console.error(err);
-          return;
+            alert(err.message + "  " + Object.values(err.details));
+            return;
         }
-
-          var amountfield = '15.00';
+        
+          var amountfield = $('#txtamount').val();
           var customerid = Math.floor(Math.random() * (9999999999 - 1000 + 1)) + 1000;
           var firstnamefield = $('#txtfirstname').val();
           var lastnamefield = $('#txtlasttname').val();
